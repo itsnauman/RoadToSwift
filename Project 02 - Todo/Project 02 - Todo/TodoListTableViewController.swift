@@ -9,18 +9,21 @@
 import UIKit
 
 class TodoListTableViewController: UITableViewController {
-
+    
+    override func viewDidAppear(animated: Bool) {
+        // Animate entry of new todo task
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesInRange: range)
+        self.tableView.reloadSections(sections, withRowAnimation: .Automatic)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
-        todoList.append(TodoItem(title: "Buy a rocket 🚀", description: "Muree Road 🚘"))
-        todoList.append(TodoItem(title: "Meet my friend 👸", description: "Bahria Town, Islamabad 🐽"))
-        todoList.append(TodoItem(title: "Go to the hospital 🚑", description: "Peshawar Road ⚽️"))
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        todoList.append(TodoItem(title: "Buy a rocket 🚀", description: "I ❤️ Space X"))
+        todoList.append(TodoItem(title: "Meet my friend 👸", description: "YAY!"))
+        todoList.append(TodoItem(title: "Visit the dentist 🚑", description: "Root Canal Sucks 😏"))
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -34,6 +37,7 @@ class TodoListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         cell.textLabel?.text = todoList[indexPath.row].title
+        cell.textLabel?.font = UIFont(name: "Futura", size: 18)
         return cell
     }
 
@@ -67,7 +71,7 @@ class TodoListTableViewController: UITableViewController {
             completeTodoAction = UITableViewRowAction(style: .Default, title: "Done") { (action, cellIndex) in
                 let cell = tableView.cellForRowAtIndexPath(indexPath)
                 cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
-                cell!.textLabel?.textColor = UIColor.grayColor()
+                cell!.textLabel?.textColor = UIColor.lightGrayColor()
                 todoList[indexPath.row].completed = true
                 tableView.setEditing(false, animated: true) // Close cell
             }
@@ -84,21 +88,20 @@ class TodoListTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-        swap(&todoList[fromIndexPath.row], &todoList[toIndexPath.row])
+        if (fromIndexPath != toIndexPath) {
+            swap(&todoList[fromIndexPath.row], &todoList[toIndexPath.row])
+        }
     }
 
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.destinationViewController is ViewController {
+            let displayTodoVC = segue.destinationViewController as! ViewController
+            displayTodoVC.todoItemData = todoList[self.tableView.indexPathForSelectedRow!.row]
+        }
     }
-    */
 
 }
