@@ -16,10 +16,11 @@ I learned how to:
 
 <img src="http://i.imgur.com/e7SaoY8.gif?1_" width="300">
 
-#### Project 02 - [Todo](https://github.com/itsnauman/RoadToSwift/tree/master/Project%2002%20-%20Todo)
+#### Project 02 - [Multiple View Controllers](https://github.com/itsnauman/RoadToSwift/tree/master/Project%2002%20-%20Multiple%20View%20Controllers)
 
 I learned how to:
 * Navigate between multiple view controllers using segues
+* Rearrange cells
 * Add custom cell actions
 * Customize cell accessories and font
 * Add custom navigation bar buttons
