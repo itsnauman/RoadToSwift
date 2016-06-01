@@ -29,3 +29,11 @@ I learned how to:
 
 
 <img src="http://i.giphy.com/3o7qDQBCfIUANPODVm.gif" width="300">
+
+#### Project 03 - [Gesture Recognizer](https://github.com/itsnauman/RoadToSwift/tree/master/Project%2003%20-%20Gesture%20Recognizer)
+I learned how to:
+* Integrate gestures into a view controller namely the swipe gesture
+* Trigger segue with a swipe gesture
+
+
+<img src="http://i.giphy.com/3o72F2ZjNRrlU4DcgE.gif" width="300">
