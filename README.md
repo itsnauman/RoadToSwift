@@ -37,3 +37,11 @@ I learned how to:
 
 
 <img src="http://i.giphy.com/3o72F2ZjNRrlU4DcgE.gif" width="300">
+
+
+#### Project 04 - [Pull To Refresh](https://github.com/itsnauman/RoadToSwift/tree/master/Project%2004%20-%20Pull%20To%20Refresh)
+I learned how to:
+* Integrate pull to refresh to update table view content
+
+
+<img src="http://i.giphy.com/3oEjHH6iQOr2rXSVXO.gif" width="300">
