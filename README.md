@@ -1,3 +1,7 @@
+```swift
+import Swift
+import Foundation
+```
 # Road To Swift :helicopter:
 
 ![gify](http://i.giphy.com/sRWf3Oa9vW6Xu.gif)
