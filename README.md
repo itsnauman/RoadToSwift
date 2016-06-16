@@ -49,3 +49,12 @@ I learned how to:
 
 
 <img src="http://i.giphy.com/3oEjHH6iQOr2rXSVXO.gif" width="300">
+
+
+#### Project 05 - [Page Views](https://github.com/itsnauman/RoadToSwift/tree/master/Project%2005%20-%20Page%20Views)
+I learned how to:
+* Implement the UI PageView Controller
+* Add UI Page Control to the view
+
+
+<img src="http://i.giphy.com/26BRvv618qbDLhG4o.gif" width="300">
