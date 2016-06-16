@@ -20,6 +20,10 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         return storyboard?.instantiateViewControllerWithIdentifier("StepZero") as! ViewController
     }
     
+    func getStepTwo() -> StepTwoViewController {
+        return storyboard?.instantiateViewControllerWithIdentifier("StepTwo") as! StepTwoViewController
+    }
+    
     func getStepOne() -> StepOneViewController {
         return storyboard?.instantiateViewControllerWithIdentifier("StepOne") as! StepOneViewController
     }
@@ -27,6 +31,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         if viewController.isKindOfClass(ViewController) {
             return getStepOne()
+        } else if viewController.isKindOfClass(StepOneViewController) {
+            return getStepTwo()
         } else {
             return nil
         }
@@ -35,13 +41,15 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         if viewController.isKindOfClass(StepOneViewController) {
             return getStepZero()
+        } else if viewController.isKindOfClass(StepTwoViewController) {
+            return getStepOne()
         } else {
             return nil
         }
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 2
+        return 3
     }
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
