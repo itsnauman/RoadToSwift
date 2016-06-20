@@ -36,9 +36,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             if placemarks?.count > 0 {
                 let pm = placemarks![0]
-                self.locationManager.stopUpdatingLocation()
-                
                 //stop updating location to save battery life
+                self.locationManager.stopUpdatingLocation()
                 self.displayLocationInfo(pm)
             }
 
