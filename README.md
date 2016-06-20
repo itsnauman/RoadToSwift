@@ -58,3 +58,10 @@ I learned how to:
 
 
 <img src="http://i.giphy.com/26BRvv618qbDLhG4o.gif" width="300">
+
+#### Project 06 - [Find My Services](http://i.giphy.com/26BRvv618qbDLhG4o.gif)
+I learned how to:
+* Use the Core Location framework
+
+
+<img src="http://i.giphy.com/26BRvv618qbDLhG4o.gif" width="300">
