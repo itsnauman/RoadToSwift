@@ -64,4 +64,4 @@ I learned how to:
 * Use the Core Location framework
 
 
-<img src="http://i.giphy.com/26BRvv618qbDLhG4o.gif" width="300">
+<img src="http://i.giphy.com/3o6gDPVklgzWBgJQGc.gif" width="300">
