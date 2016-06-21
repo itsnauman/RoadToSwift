@@ -62,6 +62,7 @@ I learned how to:
 #### Project 06 - [Find My Location](https://github.com/itsnauman/RoadToSwift/tree/master/Project%2006%20-%20Find%20My%20Location)
 I learned how to:
 * Use the Core Location framework
+* Use the UIAlertController to show alerts
 
 
 <img src="http://i.giphy.com/3o6gDPVklgzWBgJQGc.gif" width="300">
