@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		823246881D1967BC0035498D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823246871D1967BC0035498D /* AppDelegate.swift */; };
+		8232468A1D1967BC0035498D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823246891D1967BC0035498D /* ViewController.swift */; };
+		8232468D1D1967BC0035498D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8232468B1D1967BC0035498D /* Main.storyboard */; };
+		8232468F1D1967BC0035498D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8232468E1D1967BC0035498D /* Assets.xcassets */; };
+		823246921D1967BC0035498D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823246901D1967BC0035498D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		823246841D1967BC0035498D /* Project 07 - Buttons Above Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 07 - Buttons Above Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		823246871D1967BC0035498D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		823246891D1967BC0035498D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8232468C1D1967BC0035498D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8232468E1D1967BC0035498D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		823246911D1967BC0035498D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		823246931D1967BC0035498D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		823246811D1967BC0035498D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8232467B1D1967BC0035498D = {
+			isa = PBXGroup;
+			children = (
+				823246861D1967BC0035498D /* Project 07 - Buttons Above Keyboard */,
+				823246851D1967BC0035498D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		823246851D1967BC0035498D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				823246841D1967BC0035498D /* Project 07 - Buttons Above Keyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		823246861D1967BC0035498D /* Project 07 - Buttons Above Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				823246871D1967BC0035498D /* AppDelegate.swift */,
+				823246891D1967BC0035498D /* ViewController.swift */,
+				8232468B1D1967BC0035498D /* Main.storyboard */,
+				8232468E1D1967BC0035498D /* Assets.xcassets */,
+				823246901D1967BC0035498D /* LaunchScreen.storyboard */,
+				823246931D1967BC0035498D /* Info.plist */,
+			);
+			path = "Project 07 - Buttons Above Keyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		823246831D1967BC0035498D /* Project 07 - Buttons Above Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 823246961D1967BC0035498D /* Build configuration list for PBXNativeTarget "Project 07 - Buttons Above Keyboard" */;
+			buildPhases = (
+				823246801D1967BC0035498D /* Sources */,
+				823246811D1967BC0035498D /* Frameworks */,
+				823246821D1967BC0035498D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 07 - Buttons Above Keyboard";
+			productName = "Project 07 - Buttons Above Keyboard";
+			productReference = 823246841D1967BC0035498D /* Project 07 - Buttons Above Keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8232467C1D1967BC0035498D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nauman Ahmad";
+				TargetAttributes = {
+					823246831D1967BC0035498D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8KWT8DCUF8;
+					};
+				};
+			};
+			buildConfigurationList = 8232467F1D1967BC0035498D /* Build configuration list for PBXProject "Project 07 - Buttons Above Keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8232467B1D1967BC0035498D;
+			productRefGroup = 823246851D1967BC0035498D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				823246831D1967BC0035498D /* Project 07 - Buttons Above Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		823246821D1967BC0035498D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				823246921D1967BC0035498D /* LaunchScreen.storyboard in Resources */,
+				8232468F1D1967BC0035498D /* Assets.xcassets in Resources */,
+				8232468D1D1967BC0035498D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		823246801D1967BC0035498D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8232468A1D1967BC0035498D /* ViewController.swift in Sources */,
+				823246881D1967BC0035498D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8232468B1D1967BC0035498D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8232468C1D1967BC0035498D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		823246901D1967BC0035498D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				823246911D1967BC0035498D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		823246941D1967BC0035498D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		823246951D1967BC0035498D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		823246971D1967BC0035498D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 07 - Buttons Above Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nauman.Project-07---Buttons-Above-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		823246981D1967BC0035498D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 07 - Buttons Above Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nauman.Project-07---Buttons-Above-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8232467F1D1967BC0035498D /* Build configuration list for PBXProject "Project 07 - Buttons Above Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823246941D1967BC0035498D /* Debug */,
+				823246951D1967BC0035498D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		823246961D1967BC0035498D /* Build configuration list for PBXNativeTarget "Project 07 - Buttons Above Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823246971D1967BC0035498D /* Debug */,
+				823246981D1967BC0035498D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8232467C1D1967BC0035498D /* Project object */;
+}
