@@ -1,15 +1,15 @@
 //
 //  ViewController.swift
-//  Project 07 - Buttons Above Keyboard
+//  Project 08 - Photo From Camera Roll
 //
-//  Created by Nauman Ahmad on 6/21/16.
+//  Created by Nauman Ahmad on 6/22/16.
 //  Copyright © 2016 Nauman Ahmad. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
-    
+class ViewController: UIViewController {
+
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
@@ -29,8 +29,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         numberToolbar.items = [cameraBtn, fixed, trashBtn, flex, cancelBtn]
         numberToolbar.sizeToFit()
-        numberToolbar.barStyle = .Default
         numberToolbar.barTintColor = UIColor.whiteColor()
+        numberToolbar.barStyle = .Default
         fixed.width = 20.0
         
         self.textView.inputAccessoryView = numberToolbar
@@ -47,7 +47,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.view.frame.origin.y += keyboardSize.height
         }
     }
-
+    
     func pullDownKeyboard() {
         self.textView.resignFirstResponder()
     }
