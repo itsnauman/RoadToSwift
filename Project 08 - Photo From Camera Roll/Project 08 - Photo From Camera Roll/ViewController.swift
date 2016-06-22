@@ -8,19 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var textView: UITextView!
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Image Picker Configuration
+        imagePicker.delegate = self
+        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        imagePicker.allowsEditing = false
         
         // Set keyboard observers
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardWasShown), name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardWasDismissed), name: UIKeyboardWillHideNotification, object: nil)
         
         let numberToolbar = UIToolbar(frame: CGRectMake(0, 0, self.view.frame.size.width, 50))
-        let cameraBtn = UIBarButtonItem(barButtonSystemItem: .Camera, target: nil, action: nil)
+        let cameraBtn = UIBarButtonItem(barButtonSystemItem: .Camera, target: nil, action: #selector(ViewController.displayImagePicker))
         let trashBtn = UIBarButtonItem(barButtonSystemItem: .Trash, target: nil, action: #selector(ViewController.clearTextView))
         let cancelBtn = UIBarButtonItem(barButtonSystemItem: .Cancel, target: nil, action: #selector(ViewController.pullDownKeyboard))
         
@@ -54,6 +60,26 @@ class ViewController: UIViewController {
     
     func clearTextView() {
         self.textView.text = ""
+    }
+    
+    func displayImagePicker() {
+        self.presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        // Create and NSTextAttachment and add your image to it.
+        let attachment = NSTextAttachment()
+        attachment.image = image
+        let attString = NSAttributedString(attachment: attachment)
+        
+        // Resize the image to the size of the text view
+        let oldWidth = attachment.image!.size.width
+        let scaleFactor = oldWidth / (textView.frame.size.width - 10)
+        attachment.image = UIImage(CGImage: attachment.image!.CGImage!, scale: scaleFactor, orientation: .Up)
+        
+        // Insert image at the end of the text view
+        textView.textStorage.insertAttributedString(attString, atIndex: textView.selectedRange.location)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
